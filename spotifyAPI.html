@@ -1,35 +1,15 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Animation</title>
-    <style>
-        /* CSS for the animated element */
-        #animated-box {
-            width: 100px;
-            height: 100px;
-            background-color: blue;
-            position: absolute;
-            transition: transform 2s; /* Apply the transition to the 'transform' property */
-        }
-    </style>
+    <title>Simple Clock App</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <p> Hello this should play an animatio</p>
-    <div id="animated-box"></div>
-
-    <script>
-        // JavaScript for animation
-        const animatedBox = document.getElementById('animated-box');
-
-        function startAnimation() {
-            // Move the element to the right
-            animatedBox.style.transform = 'translateX(200px)';
-        }
-
-        // Add an event listener to trigger the animation
-        animatedBox.addEventListener('click', startAnimation);
-    </script>
+    <div class="clock">
+        <div id="time"></div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
